@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10354605&assignment_repo_type=AssignmentRepo)
 # Eleventy Basic Starter
 
 > This is a minimal eleventy starter designed to have a similar structure to a basic web site. The repo owes a big thanks to Stephanie Eckles's [Smol Eleventy Starter](https://github.com/5t3ph/smol-11ty-starter) repository.
