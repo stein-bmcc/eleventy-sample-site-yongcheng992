@@ -1,0 +1,34 @@
+---
+layout: base.njk
+---
+
+<header class="post-header">
+    <h2>{{title}}</h2>
+    <div class="byline">
+        <p>Written by {{author}}</p>
+    </div>
+</header>
+
+{{ content | safe }}
+
+<footer class="post-footer">
+tags: {% for tag in tags %}
+<a href="/tags/{{tag}}/">{{tag}}</a> &nbsp;|&nbsp;
+{% endfor %}
+
+<p>Posts by {{author}}
+<ul role="list">
+{% for post in collections.post %}
+{% if author == post.data.author %}
+<li>
+    <a 
+    {% if post.url === page.url %}aria-current="page"{% endif %} 
+    href="{{ post.url }}">
+        {{ post.data.title }}
+    </a>
+</li>
+{% endif %}
+{%- endfor %}
+</ul>
+
+</footer>
